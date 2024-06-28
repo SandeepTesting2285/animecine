@@ -49,9 +49,6 @@ const AnimeGenres = () => {
   }, [genre_id]);
   return (
     <>
-      <h1 className="text-xl font-bold mb-4 text-center">
-        Explore anime by Genres
-      </h1>
       <div className="flex flex-col md:flex-row relative  ">
         {/* Sidebar */}
         <aside className="md:w-1/4 w-full md:overflow-y-scroll md:h-[100vh] md:sticky md:top-0 flex md:flex-row flex-col bg-black text-white">
@@ -86,6 +83,9 @@ const AnimeGenres = () => {
 
         {/* Main Content */}
         <main className="md:w-3/4 w-full min-h-[100vh] mt-4 md:mt-0 ">
+          <h1 className="text-xl font-bold mb-4 text-center text-white pt-5">
+            Explore anime by Genres
+          </h1>
           <div className="">
             {isLoadingAnimeData ? (
               <div className="flex justify-center items-center w-[100vw] h-[90vh] bg-black">

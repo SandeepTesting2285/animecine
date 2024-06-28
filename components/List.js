@@ -11,6 +11,7 @@ const List = ({
   pageTitle,
   showPagination = true,
   pathname,
+  fullPage = false,
 }) => {
   const [page, setPage] = useState(1);
   let limit = limitNumber;
@@ -27,7 +28,11 @@ const List = ({
 
   return (
     <>
-      <main className="bg-black darkMode min-h-screen">
+      <main
+        className={`darkmode max-w-7xl flex mx-auto flex-col ${
+          fullPage ? "min-h-screen" : ""
+        }`}
+      >
         <div className="flex justify-center items-center">
           <h1 className="font-bold text-2xl text-white py-3">{pageTitle}</h1>
         </div>

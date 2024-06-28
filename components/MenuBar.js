@@ -20,7 +20,7 @@ export default function MenuBar() {
   };
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden max-w-[50px]" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
@@ -32,7 +32,10 @@ export default function MenuBar() {
         </NextLink>
       </NavbarBrand>
 
-      <NavbarContent className="hidden sm:flex gap-4 mx-auto" justify="center">
+      <NavbarContent
+        className="hidden sm:flex gap-4 mx-auto text-white"
+        justify="center"
+      >
         <NavbarBrand>
           <p className="font-bold text-inherit md:hidden">animeCine</p>
         </NavbarBrand>
@@ -58,7 +61,7 @@ export default function MenuBar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="">
+      <NavbarContent className="w-fit" justify="">
         <NavbarItem>
           <Button
             href="/search"
@@ -85,7 +88,7 @@ export default function MenuBar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="text-white">
         <NavbarMenuItem>
           <Link
             as={NextLink}

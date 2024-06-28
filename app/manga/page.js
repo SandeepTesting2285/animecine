@@ -24,6 +24,7 @@ const TopManga = () => {
         limitNumber={10}
         pageTitle={"Top Manga"}
         pathname={"manga"}
+        fullPage={true}
       />
     </>
   );

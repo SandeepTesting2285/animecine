@@ -26,6 +26,7 @@ const TopAnime = () => {
         limitNumber={10}
         pageTitle={"Top Anime"}
         pathname={"anime"}
+        fullPage={true}
       />
     </>
   );

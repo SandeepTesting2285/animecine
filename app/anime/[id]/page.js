@@ -24,7 +24,7 @@ const TopAnimeDetail = ({ params }) => {
   const limitedData = animeRecom?.data?.slice(0, 10);
   return (
     <>
-      <div className="pb-5 bg-black min-h-screen">
+      <div className="pb-5 bg-black min-h-screen mx-auto max-w-7xl">
         {isLoadingAnimeDetails ? (
           <div className="flex justify-center items-center w-[100vw] h-[90vh] bg-black">
             <Spinner label="Fetching Details" color="primary" size="lg" />

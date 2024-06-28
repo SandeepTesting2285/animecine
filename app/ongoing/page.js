@@ -8,6 +8,7 @@ const Trending = () => {
       limitNumber={10}
       pageTitle={"Ongoing Anime"}
       pathname={"ongoing"}
+      fullPage={true}
     />
   );
 };

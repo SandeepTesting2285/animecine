@@ -15,7 +15,7 @@ const MangaDetails = ({ params }) => {
 
   return (
     <>
-      <div className="min-h-[100vh] bg-black">
+      <div className="min-h-[100vh] bg-black mx-auto max-w-7xl">
         {isLoadingAnimeDetails ? (
           <div className="flex justify-center items-center w-[100vw] h-[90vh] bg-black">
             <Spinner label="Fetching Details" color="primary" size="lg" />
