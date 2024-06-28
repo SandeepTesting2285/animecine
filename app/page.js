@@ -28,7 +28,7 @@ export default function Home() {
               Animecine
             </h2>
           </div>
-          <div className=" justify-items-center grid grid-cols-1 sm:grid-cols-2 gap-2 mx-auto">
+          <div className=" grid justify-items-center grid-cols-1 sm:grid-cols-2 gap-y-2 mx-auto max-w-7xl">
             <CardForFeature
               imgUrl={"https://anilist.co/img/landing/stats.svg"}
               title={"Discover your obsession"}
